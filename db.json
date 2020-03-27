@@ -1,0 +1,319 @@
+{
+  "family": [
+    {
+      "id": 1,
+      "family_name": "黑糖系列",
+      "family_info": "black"
+    },
+    {
+      "id": 2,
+      "family_name": "新鲜果茶",
+      "family_info": "fruits"
+    },
+    {
+      "id": 3,
+      "family_name": "经典系列",
+      "family_info": "classics"
+    },
+    {
+      "id": 4,
+      "family_name": "鲜草系列",
+      "family_info": "fresh"
+    },
+    {
+      "id": 5,
+      "family_name": "拿铁系列",
+      "family_info": "latte"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "title": "黑糖珠珠 Brown Sugar Bubbles",
+      "description": "精选味全鲜奶，手作黑糖珍珠，感受双重甜蜜！",
+      "image": "img/20191016014355500.jpg",
+      "family_id": 1
+    },
+    {
+      "id": 2,
+      "title": "黑糖珠珠厚奶 Brown Sugar",
+      "description": "厚奶生来就有微咸味,遇上黑糖的香甜,像是好故事增加了章节,口味也多了变化.",
+      "image": "img/20191016042139703.jpg",
+      "family_id": 1
+    },
+    {
+      "id": 3,
+      "title": "黑糖仙草珠珠 Brown Sugar",
+      "description": "香滑仙草、手作黑糖珍珠,甜而不腻，既软Q又有嚼劲,简单的组合碰撞出丰富的口感!",
+      "image": "img/20191016042152281.jpg",
+      "family_id": 1
+    },
+    {
+      "id": 4,
+      "title": "鲜橙多多 Fresh Yakult Orange",
+      "description": "养乐多抛进怀里,千言万语的情话,都比不上",
+      "image": "img/20191016014431218.jpg",
+      "family_id": 2
+    },
+    {
+      "id": 5,
+      "title": "鲜橙奶盖 Fresh Orange Cheese",
+      "description": "浓香四溢的奶盖，搭配精选香橙果肉，惊喜",
+      "image": "img/20191016014442906.jpg",
+      "family_id": 2
+    },
+    {
+      "id": 6,
+      "title": "满杯鲜橙 Orange Iced Tea",
+      "description": "现煮绿茶汤微微香气,混合大粒饱满的橙子",
+      "image": "img/20191016014454312.jpg",
+      "family_id": 2
+    },
+    {
+      "id": 7,
+      "title": "鲜芒果茶饮Fresh Mango Iced Tea",
+      "description": "冰爽一夏，感受新鲜芒果季",
+      "image": "img/20191017121410812.jpg",
+      "family_id": 2
+    },
+    {
+      "id": 8,
+      "title": "鲜芒果芝士 Fresh Mango Cheese",
+      "description": "芒口清香，心心念念",
+      "image": "img/20191017121421593.jpg",
+      "family_id": 2
+    },
+    {
+      "id": 10,
+      "title": "黄桃芝士 Yellow Peach Cheese",
+      "description": "鲜果鲜茶，钟你所爱",
+      "image": "img/20191017121431921.jpg",
+      "family_id": 2
+    },
+    {
+      "id": 11,
+      "title": "鲜芒果沙冰 Fresh Mango",
+      "description": "鲜芒果冰沙，给你满满在一口冰爽",
+      "image": "img/20190923033535390.jpg",
+      "family_id": 2
+    },
+    {
+      "id": 12,
+      "title": "金桔柠檬蜜 Fresh Kumquat &",
+      "description": "健康特饮，清爽解渴人人爱",
+      "image": "img/20190923033238781.jpg",
+      "family_id": 2
+    },
+    {
+      "id": 13,
+      "title": "小Q大布丁 Pudding & Mini",
+      "description": "顺滑软嫩的大布丁搭配小珍珠，与醇香奶茶结合，触动着味蕾的丰富享受",
+      "image": "img/20190923032837375.jpg",
+      "family_id": 3
+    },
+    {
+      "id": 14,
+      "title": "小Q奶茶 Little Bubble MIlk Tea",
+      "description": "醇香经典奶茶加入顺滑软嫩的小珍珠，触动味蕾",
+      "image": "img/20190923032823828.jpg",
+      "family_id": 3
+    },
+    {
+      "id": 15,
+      "title": "茉香奶茶 Jasmine Milk Tea",
+      "description": "一抹之香，一缕绽放的茶香",
+      "image": "img/20190923032811031.jpg",
+      "family_id": 3
+    },
+    {
+      "id": 16,
+      "title": "吉祥三宝 Lucky Sambo",
+      "description": "好运常在，大满贯精选，吉祥三宝满足你",
+      "image": "img/20190923032752125.jpg",
+      "family_id": 3
+    },
+    {
+      "id": 17,
+      "title": "卡司奶茶 Classic Milk Tea",
+      "description": "原味奶茶，挚爱经典",
+      "image": "img/20190923032738593.jpg",
+      "family_id": 3
+    },
+    {
+      "id": 18,
+      "title": "乌龙奶茶 Oolong Milk Tea",
+      "description": "香醇乌龙，更显奶茶风味",
+      "image": "img/20190923032727484.jpg",
+      "family_id": 3
+    },
+    {
+      "id": 19,
+      "title": "珍珠奶茶 Bubble Milk Tea",
+      "description": "二十年的味道，未曾改变过",
+      "image": "img/20190923032710109.jpg",
+      "family_id": 3
+    },
+    {
+      "id": 20,
+      "title": "仙草甘草 Herb with sweet tea",
+      "description": "悠悠仙草香四溢，略带神秘的清香滋味",
+      "image": "img/20190923032857281.jpg",
+      "family_id": 4
+    },
+    {
+      "id": 21,
+      "title": "香香仙草 Wax gourd milk tea",
+      "description": "迷人奶香牵挂味蕾，看得见的优质仙草",
+      "image": "img/2019092303296703.jpg",
+      "family_id": 4
+    },
+    {
+      "id": 22,
+      "title": "仙草大满贯 Herb grand slam",
+      "description": "丰富的六种口感，实打实料一口大满足",
+      "image": "img/20190923032915890.jpg",
+      "family_id": 4
+    },
+    {
+      "id": 23,
+      "title": "仙草锉冰 Herb smoothies",
+      "description": "清冽的冰沙，搭配迷你小Q，感受久违的清凉快乐",
+      "image": "img/20190923032929578.jpg",
+      "family_id": 4
+    },
+    {
+      "id": 24,
+      "title": "抹茶拿铁 Mocha Latte",
+      "description": "在鲜奶的烘托下，完美表现出抹茶的原香",
+      "image": "img/2019092303300359.jpg",
+      "family_id": 5
+    },
+    {
+      "id": 25,
+      "title": "绿茶拿铁 Green Tea Latte",
+      "description": "鲜奶的纯粹，绿茶的幽香，留齿的是两者碰",
+      "image": "img/20190923033025062.jpg",
+      "family_id": 5
+    },
+    {
+      "id": 26,
+      "title": "红茶拿铁 Black Tea Latte",
+      "description": "现煮6小时锡兰红茶，搭配香滑鲜奶，新鲜",
+      "image": "img/20190923033034875.jpg",
+      "family_id": 5
+    },
+    {
+      "id": 27,
+      "title": "乌龙拿铁 Oolong Latte",
+      "description": "清新淡雅的乌龙茶汤，遇上香醇鲜奶，风味",
+      "image": "img/20190923033050671.jpg",
+      "family_id": 5
+    },
+    {
+      "id": 28,
+      "title": "可可芭蕾拿铁 Cocoa Ballet Latte",
+      "description": "香甜醇香的可可芭蕾，综合了鲜奶的浓郁",
+      "image": "img/2019092303314671.jpg",
+      "family_id": 5
+    },
+    {
+      "id": 29,
+      "title": "奥利奥巧克力鲜乳茶 OREO",
+      "description": "巧克力鲜奶遇上奥利奥，入口顺滑，淡淡的",
+      "image": "img/2019092303435015.jpg",
+      "family_id": 5
+    }
+  ],
+  "stores": [
+    {
+      "id": 1,
+      "img": "img/20190923052031593.jpg",
+      "name": "东城万达店",
+      "region": "广州市"
+    },
+    {
+      "id": 2,
+      "img": "img/20190923052544406.jpg",
+      "name": "东城万达店",
+      "region": "广州市"
+    },
+    {
+      "id": 3,
+      "img": "img/2019092305267671.jpg",
+      "name": "东城万达店",
+      "region": "广州市"
+    },
+    {
+      "id": 4,
+      "img": "img/2019092305283171.jpg",
+      "name": "东城万达店",
+      "region": "广州市"
+    },
+    {
+      "id": 5,
+      "img": "img/20190923052732875.jpg",
+      "name": "花都融创店",
+      "region": "广州市"
+    },
+    {
+      "id": 6,
+      "img": "img/20190923052716406.jpg",
+      "name": "花都融创店",
+      "region": "广州市"
+    },
+    {
+      "id": 7,
+      "img": "img/20190923052633718.jpg",
+      "name": "深圳世纪汇店",
+      "region": "深圳市"
+    },
+    {
+      "id": 8,
+      "img": "img/2019092305270328.jpg",
+      "name": "深圳世纪汇店",
+      "region": "深圳市"
+    },
+    {
+      "id": 9,
+      "img": "img/20190923052852015.jpg",
+      "name": "花都融创店",
+      "region": "上海市"
+    },
+    {
+      "id": 10,
+      "img": "img/20190923052916156.jpg",
+      "name": "深圳世纪汇",
+      "region": "深圳市"
+    },
+    {
+      "id": 11,
+      "img": "img/20190923052930015.jpg",
+      "name": "苏元万达店",
+      "region": "上海市"
+    },
+    {
+      "id": 12,
+      "img": "img/20190923052939625.jpg",
+      "name": "苏元万达店",
+      "region": "上海市"
+    },
+    {
+      "id": 13,
+      "img": "img/20190923052951750.jpg",
+      "name": "苏元万达店",
+      "region": "上海市"
+    },
+    {
+      "id": 14,
+      "img": "img/2019092305303781.jpg",
+      "name": "番禺永旺店",
+      "region": "武汉市"
+    },
+    {
+      "id": 15,
+      "img": "img/20190923053017812.jpg",
+      "name": "番禺永旺店",
+      "region": "武汉市"
+    }
+  ]
+}

@@ -1,0 +1,816 @@
+/* 大屏 */
+@media screen and (max-width:1366px){
+  /* 头部信息 */
+  .wal{
+    width:1200px;
+  }
+  /*产品中心*/
+  .indexProduct{
+    width: 990px;
+  }
+  .icon-next{
+    right: 5px
+  }
+  .listBox{
+    width: 892px;
+    height: 367px;
+  }
+  .listBox li{
+    width: 280px;
+    height: 367px;
+  }
+  /* 精彩活动 */
+  .activity .list li .imgDiv, 
+  .activity .list li:nth-child(2n + 1) .imgDiv, 
+  .activity .list li .box, 
+  .activity .list li:nth-child(2n + 1) .box{
+    padding: 0;
+  }
+  /* 店铺展示 */
+  .indexStore .slick-list .hideBox .name{
+    margin-top: 70px;
+  }
+  /* 底部联系我们 */
+  .footDiv .leftDiv{
+    width: 440px;
+  }
+  .footDiv .rightDiv{
+    width: 760px;
+  }
+  /* 营业据点 */
+  .stronghold .contentBox .msg{
+    padding-top: 117px;
+  }
+  /* 产品中心页 */
+  .product .rightDiv{
+    width: 886px;
+  }
+  .product .list li .box{
+    margin-right: 15px;
+    height: 385px;
+  }
+  /* 公司简介 */
+  .aboutPart1 .contentBox{
+    padding-left: 285px;
+  }
+  .aboutPart2 .rightDiv .we{
+    padding: 11px 0 0 35px;
+  }
+  .aboutPart2 .rightDiv .content{
+    padding: 30px 28px 0 35px;
+  }
+  .aboutPart2 .rightDiv .imgList{
+    padding-right: 80px;
+  }
+  .aboutPart2 .rightDiv .imgList li{
+    width: 33.33%;
+  }
+  /* 品牌文化 */
+  .culturePart1 .list{
+    padding: 0 50px;
+  }
+}
+/* 中屏 */
+@media screen and (max-width:1280px){
+  /* 头部信息 */
+  .wal{
+    width: 990px;
+  }
+  .wal .nav1 > ul > li, .wal .nav2 > ul > li{
+    padding: 0 35px;
+  }
+  .nav2 li:last-child .sNav{
+    right: 0;
+  }
+  /* 产品中心 */
+  .indexPart1{
+    padding-bottom: 0;
+  }
+  .indexProduct{
+    width: 783px;
+  }
+  .listBox{
+    width: 685px;
+    height: 305px;
+    overflow: hidden;
+  }
+  .listBox li{
+    width: 212px;
+    height: 304px;
+  }
+  /* 公司简介 */
+  .indexPart2 .videoPic{
+    padding: 0 34px;
+  }
+  /* 底部联系我们 */
+  .footDiv .leftDiv{
+    width: 340px;
+  }
+  .footDiv .rightDiv{
+    width: 650px;
+  }
+  .footDiv .form li{
+    width: 260px;
+    margin: 0 30px 20px 0;
+  }
+  .footDiv .form li:nth-child(even){
+    width: 360px;
+  }
+  .footDiv .links,.footDiv .wenzi{
+    text-align: center;
+    float: none;
+  }
+  .footDiv .wenzi{
+    margin-top: 20px;
+  }
+  /* 联系我们页面 */
+  .contact .list li{
+    font-size: 14px;
+    line-height: 28px;
+  }
+  .contact .list li:nth-child(2) .msg{
+    padding-left: 104px;
+  }
+  .contact .list li:nth-child(1) .msg{
+    padding-left: 88px;
+  }
+  .contact .list li:nth-child(1) .msg span{
+    left: 25px;
+  }
+  .contact .list li:nth-child(2) .msg span{
+    left: 28px;
+  }
+  .consulting{
+    height: 995px;
+  }
+  .consulting .form li input{
+    width: 81%;
+  }
+  .consulting .form li textarea{
+    width: 81%;
+  }
+  /* 营业据点 */
+  .stronghold .contentBox .msg{
+    padding-top: 38px;
+  }
+  /* 产品中心页 */
+  .product .rightDiv{
+    width: 776px;
+  }
+  .product .leftDiv{
+    width: 184px;
+  }
+  .product .list ul{
+    margin-right: 15px;
+  }
+  .product .list li .box{
+    margin-right: 15px;
+    height: 365px;
+  }
+}
+/* 小屏 */
+@media screen and (max-width:1004px){
+  /* 小屏隐藏 */
+  .topRight, .nav1, .nav2, .specs, .btnDiv, .banner, .footDiv .rightDiv, .indexTitle2, .pageBanner, .activity .list li .content, .pageNum, .product .leftDiv, .aboutPart1 .contentBox .imgDiv{
+    display: none;
+  }
+  .indexPart2 .btnDiv, .pageBannerTel{
+    display: block;
+  }
+  /* 头部信息 */
+  .headDiv{
+    height: 70px;
+  }
+  .wal{
+    width: 100%;
+  }
+  .wal .logo{
+    left: 10px;
+    top: 7px;
+    margin: 0;
+  }
+  .wal .logo img{
+    width: 140px;
+  }
+  .navIco{
+    display: block;
+    width: 33px;
+    height: 33px;
+    position: absolute;
+    top: 24px;
+    right: 19px;
+  }
+  .topSearchIco{
+    width: 33px;
+    height: 32px;
+    display: block;
+    position: absolute;
+    top: 21px;
+    right: 64px;
+  }
+  .headDiv .wal .links{
+    position: absolute;
+    font-size: 12px;
+    right: 110px;
+    top: 23px;
+    line-height: 31px;
+  }
+  .headDiv .wal .links a{
+    color: #ababab;
+  }
+  .navLayer{
+    display: block;
+  }
+  /* 首页轮播图 */
+  .indexFlash{
+    display: block;
+  }
+  /* 产品中心 */
+  .indexPart1{
+    padding-top: 40px;
+    background: #f5f4f0;
+  }
+  .indexTitle .txt1{
+    font-size: 30px;
+  }
+  .indexTitle .txt2{
+    font-size: 16px;
+    padding-bottom: 15px;
+  }
+  .indexPart1 .bigBox{
+    padding-left: 0;
+  }
+  .bigBox .leftDiv{
+    width: 100%;
+    padding: 10px 0;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    position: relative;
+  }
+  .bigBox .leftDiv ul{
+    padding-left: 55px;
+    width: 1627px;
+    overflow: hidden;
+    position: relative;
+  }
+  .bigBox .leftDiv li{
+    width: 20%;
+    float: left;
+    height: 55px;
+    border: 0;
+    text-align: center;
+  }
+  .leftDiv .icon-prev, .leftDiv .icon-next{
+    width: 30px;
+    height: 30px;
+    top: 49px;
+    background-size: 100%;
+    display: block;
+  }
+  .leftDiv .icon-prev{
+    left: 10px;
+  }
+  .leftDiv .icon-next{
+    right: 15px;
+  }
+  .indexProduct{
+    width: 100%;
+    top: 78px;
+    background: #759250;
+    padding: 50px 0;
+    box-sizing: border-box;
+  }
+  .listBox{
+    height: auto;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+  .listBox ul{
+    width: 3210px;
+    max-height: 422px;
+    overflow: hidden;
+  }
+  .listBox li{
+    width: 325px;
+    height: auto;
+  }
+  .listBox li .proTitle{
+    font-size: 14px;
+    padding: 10px 10px;
+  }
+  .listBox li .txt{
+    font-size: 13px;
+    padding: 7px 10px 4px;
+    height: 40px;
+    line-height: 21px;
+  }
+  .listBox li .proTitle em{
+    left: 10px;
+    width: 28px;
+  }
+  .indexProduct .icon-prev, .indexProduct .icon-next{
+    width: 30px;
+    height: 30px;
+    background-size: 100%;
+  }
+  .indexProduct .icon-prev{
+    left: 10px;
+  }
+  .indexProduct .icon-next{
+    right: 15px;
+  }
+  /* 公司简介 */
+  .indexPart2 .btnDiv a{
+    width: 138px;
+    height: 36px;
+    line-height: 36px;
+  }
+  .indexPart2 .videoPic{
+    padding: 0 14px;
+  }
+  /* 店铺展示 */
+  .indexPart3{
+    padding: 35px 0 50px;
+  }
+  .indexStore .slick-list li{
+    width: 25%;
+  }
+  .indexStore .slick-list{
+    max-height: 282px;
+  }
+  .indexPart3 .btnDiv,.indexPart4 .btnDiv{
+    display: block;
+  }
+  .indexPart3 .btnDiv a,.indexPart4 .btnDiv a{
+    width: 138px;
+    height: 36px;
+    line-height: 36px;
+  }
+  /* 最新活动 */
+  .indexPart4{
+    padding: 0 10px;
+    background: #fff;
+    height: auto;
+  }
+  .indexPart4 .list{
+    padding: 42px 0 32px;
+  }
+  .indexPart4 .list li{
+    float: none;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .indexPart4 .list li .box{
+    overflow: hidden;
+    margin-right: 0;
+    position: relative;
+    padding-left: 140px;
+    height: 84px;
+    box-shadow: 0 1px 5px rgba(35, 25, 25, .2);
+  }
+  .indexPart4 .list li .imgDiv{
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .indexPart4 .list li .imgDiv img{
+    width: 130px;
+  }
+  .indexPart4 .list li .botDiv{
+    margin: 0;
+    padding: 0;
+    height: 84px;
+    background: none;
+  }
+  .indexPart4 .list li .time,.indexPart4 .list li .more{
+    display: none;
+  }
+  .indexPart4 .list li .name{
+    font-size: 16px;
+    padding: 8px 0 5px;
+  }
+  /* 品牌优势 */
+  .indexPart5{
+    padding:40px 10px 50px;
+  }
+  .indexPart5 .list{
+    padding-top: 35px;
+  }
+  .indexPart5 .list li{
+    width: 50%;
+  }
+  .indexPart5 .list li .ico {
+    width: 100px;
+    height: 100px;
+  }
+  /* 首页底部联系我们 */
+  .footDiv{
+    padding: 0 10px 30px;
+    height: auto;
+  }
+  .footDiv .leftDiv{
+    width: 100%;
+  }
+  .footDiv .botDiv{
+    padding-top: 40px;
+  }
+  .footDiv .ewmDiv, .footDiv .msgList{
+    text-align: center;
+  }
+  .footDiv .links a{
+    padding: 0 10px;
+  }
+  /* 联系我们页面 */
+  .pageNav{
+    padding: 28px 10px 50px;
+  }
+  .pageNav li{
+    width: 98px;
+    height: 36px;
+    font-size: 14px;
+  }
+  .pageNav li a{
+    width: 96px;
+    height: 34px;
+    line-height: 34px;
+  }
+  .contact{
+    padding-bottom: 60px;
+  }
+  .contact .list li{
+    width: 100%;
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 10px;
+  }
+  .contact .list li .box{
+    height: 224px;
+    margin: 0 10px;
+  }
+  .contact .list li .ico{
+    height: 85px;
+  }
+  .contact .list li .msg{
+    text-align: center;
+    padding: 0;
+  }
+  .contact .list li:nth-child(1) .msg, .contact .list li:nth-child(2) .msg{
+    padding-left: 0;
+  }
+  .contact .list li .msg span{
+    position: static;
+  }
+  .contact .txt, .consulting .txt{
+    font-size: 22px;
+    padding: 30px;
+  }
+  /* 留言咨询 */
+  .consulting{
+    padding: 0 20px 70px;
+    height: auto;
+    background: transparent;
+  }
+  .consulting .form{
+    width: 100%;
+  }
+  .consulting .form li input, .consulting .form li span:first-child{
+    height: 40px;
+    line-height: 40px;
+  }
+  /* 营业据点 */
+  .stronghold{
+    padding: 45px 10px 100px;
+  }
+  .stronghold .contentBox .imgDiv{
+    width: 100%;
+  }
+  .stronghold .contentBox .msg{
+    padding-top: 20px;
+    line-height: 28px;
+    width: 100%;
+  }
+  /* 精彩活动 */
+  .activity{
+    padding: 0 10px 60px;
+  }
+  .activity .list{
+    padding: 35px 0 10px;
+  }
+  .activity .list li{
+    height: 100px;
+    margin-bottom: 10px;
+  }
+  .activity .list li .imgDiv{
+    width: 130px;
+    height: 100px;
+  }
+  .activity .list li .box{
+    margin-left: 10px;
+  }
+  .activity .list li .imgDiv img{
+    width: 130px;
+  }
+  .activity .list li .imgDiv, 
+  .activity .list li .box, 
+  .activity .list li:nth-child(2n + 1) .imgDiv, 
+  .activity .list li:nth-child(2n + 1) .box{
+    float: left;
+  }
+  .activity .list li .box{
+    width: auto;
+  }
+  .activity .list li .name{
+    font-size: 14px;
+    line-height: 24px;
+    margin: 0;
+    height: 20px;
+  }
+  .activity .list li .time{
+    margin-top: 8px;
+    font-size: 12px;
+    color: #3a3a3a;
+  }
+  .activity .list li .btnDiv, .pageMore{
+    display: block;
+  }
+  .activity .list li .btnDiv a{
+    width: 120px;
+    height: 30px;
+    font-size: 14px;
+    line-height: 30px;
+    margin-top: 8px;
+  }
+  /* 产品中心页 */
+  .product{
+    background: none;
+    padding: 45px 10px 50px;
+    height: auto;
+  }
+  .product .rightDiv{
+    width: 100%;
+  }
+  .product .list{
+    padding-bottom: 25px;
+  }
+  .product .list ul{
+    margin-right: -10px;
+  }
+  .product .list li{
+    width: 50%;
+    margin-bottom: 20px;
+  }
+  .product .list li .box{
+    margin-right: 10px;
+    height: auto;
+    padding-bottom: 10px;
+    box-shadow: 0 1px 5px rgba(35,25,25,0.2);
+  }
+  .product .list li .name{
+    font-size: 14px;
+    padding: 10px 10px;
+  }
+  .product .list li .name em{
+    left: 10px;
+    width: 28px;
+  }
+  .product .list li .txt{
+    font-size: 13px;
+    height: 44px;
+    padding: 10px 10px 0;
+  }
+  /* 公司简介 */
+  .aboutPart1{
+    padding: 0 10px 50px;
+  }
+  .aboutPart1 .contentBox{
+    margin-top: 50px;
+    padding-left: 0;
+    min-height: 200px;
+  }
+  .aboutPart1 .contentBox .year{
+    padding-top: 22px;
+    font-size: 36px;
+    text-align: center;
+  }
+  .aboutPart1 .contentBox .txt{
+    font-size: 18px;
+    padding: 10px 0 30px;
+    text-align: center;
+  }
+  .aboutPart1 .contentBox .content{
+    line-height: 30px;
+  }
+  .aboutPart2{
+    padding: 40px 10px;
+  }
+  .aboutPart2 > div{
+    width: 100%;
+  }
+  .aboutPart2 .bigImg{
+    height: auto;
+  }
+  .aboutPart2 .bigImg img{
+    display: block;
+    width: 100%;
+  }
+  .aboutPart2 .rightDiv .we{
+    padding-top: 45px;
+  }
+  .aboutPart2 .rightDiv .txt{
+    padding: 10px 0 0 35px ;
+    font-size: 22px;
+  }
+  .aboutPart2 .rightDiv .imgList li img{
+    width: 100%;
+  }
+  .aboutPart3 {
+    padding: 45px 10px 50px;
+  }
+  .aboutPart3 .txt{
+    font-size: 20px;
+    padding-bottom: 20px;
+  }
+  .aboutPart3 .content{
+    line-height: 30px;
+  }
+  .aboutPart3 .bigImg{
+    padding: 35px 0 40px;
+  }
+  .aboutPart5 .txt{
+    font-size: 20px;
+    padding: 30px 10px 0;
+  }
+  .aboutPart5 .content{
+    padding: 20px 10px 0;
+    line-height: 30px;
+  }
+  /* 品牌文化 */
+  .culturePart1{
+    padding: 0 10px 45px;
+  }
+  .culturePart1 .txt{
+    padding: 35px 0 10px;
+    font-size: 20px;
+  }
+  .culturePart1 .content{
+    line-height: 30px;
+    padding-bottom: 40px;
+  }
+  .culturePart1 .wenzi{
+    padding-bottom: 25px;
+  }
+  .culturePart1 .list{
+    padding: 0;
+  }
+  .culturePart1 .list li{
+    width: 50%;
+    margin-bottom: 30px;
+  }
+  .culturePart2{
+    height: auto;
+    background-size: 100% 100%;
+    padding: 30px 10px;
+  }
+  .culturePart2 .content{
+    line-height: 30px;
+    padding-top: 30px;
+    width: auto;
+  }
+  .culturePart3{
+    padding: 0 15px 50px;
+    height: auto;
+    background: none;
+  }
+  .culturePart3 .txt{
+    padding: 50px 0 15px;
+    font-size: 20px;
+  }
+  .culturePart3 .msg{
+    line-height: 32px;
+  }
+  .culturePart3 .msg span{
+    font-size: 16px;
+  }
+  /* 店铺展示 */
+  .store{
+    padding: 0 10px 50px;
+  }
+  .store .form{
+    padding-top: 40px
+  }
+  .store .form .box{
+    float: none;
+    margin-bottom: 10px;
+    margin-right: 0;
+  }
+  .store .form .box select{
+    width: 100%;
+  }
+  .store .box1{
+    float: none;
+  }
+  .store .box1 span{
+    display: none;
+  }
+  .store .box1 input{
+    width: 100%;
+    margin-left: 0;
+  }
+  .store .box1 button{
+    top: 0;
+  }
+  .store .list{
+    padding-top: 30px;
+  }
+  .store .list li{
+    width: 50%;
+    margin-bottom: 15px;
+  }
+  .store .list li .botDiv{
+    padding: 15px 10px 0;
+    height: 90px;
+  }
+  .store .list li .name, .store .list li .msg{
+    font-size: 14px;
+    line-height: 24px;
+    height: 48px;
+  }
+  .store .list li .msg{
+    padding-top: 4px;
+  }
+ }
+@media screen and (max-width:750px){
+  /* 产品中心 */
+  .indexPart1{
+    height: 480px;
+  }
+  .bigBox .leftDiv li{
+    width: 16%;
+  }
+  .listBox{
+    width: 284px;
+  }
+  .listBox ul{
+    width: 1400px;
+    max-height: 232px;
+    overflow: hidden;
+  }
+  .listBox li{
+    width: 137px;
+    height: auto;
+    margin: 0 2px;
+  }
+  /* 公司简介 */
+  .indexPart2 .content{
+    text-align: justify;
+  }
+  .indexPart2 .box2{
+    padding-bottom: 30px;
+  }
+  /* 店铺展示 */
+  .indexStore .slick-list li{
+    width: 50%;
+  }
+  .indexStore .slick-list{
+    height: auto;
+  }
+  /* 联系我们页面 */
+  .contact .txt, .consulting .txt{
+    font-size: 19px;
+  }
+  .consulting{
+    padding: 0 20px 32px;
+  }
+  .consulting .form li input{
+    width: 70%;
+  }
+  .consulting .form li + li{
+    margin-top: 13px;
+  }
+  .consulting .form li textarea{
+    width: 70%;
+  }
+  .consulting .form li a{
+    width: 120px;
+    height: 38px;
+    line-height: 38px;
+  }
+  /* 精彩活动 */
+  .activity .list li .box{
+    width: 208px;
+    overflow: hidden;
+  }
+  /* 公司简介 */
+  .aboutPart2 .rightDiv .we, .aboutPart2 .rightDiv .txt, .aboutPart2 .rightDiv .content{
+    padding-left: 0;
+  }
+  .aboutPart3 .txt, .aboutPart1 .contentBox .txt, .aboutPart5 .txt{
+    font-size: 19px;
+  }
+  /* 店铺展示 */
+  .store .list li .botDiv{
+    height: 50px;
+  }
+}
+/* ********************************************************** */

@@ -1,0 +1,471 @@
+body{
+  font-size:12px; 
+  font-family:Arial, "微软雅黑"; 
+  color:#666;
+}
+a{
+  color:#666; 
+  text-decoration:none; 
+  outline:none;
+}
+img{
+  border:0px; 
+  vertical-align:middle;
+}
+a:hover{
+  text-decoration:none; 
+  color:#759250; 
+  outline:none;
+}
+ul, p, dl, dt, dd, h1, h2, h3, h4, h5, body, hr, input, button{
+  padding:0px; 
+  margin:0px;
+}
+input, button, img{
+  border: 0;
+  outline: 0;
+}
+li{
+  list-style-position:outside; 
+  list-style-type:none;
+}
+h1, h2, h3, h4, h5{
+  font-size:14px; 
+}
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+.clearFix:after{
+  content: '';
+  display: block;
+  clear: both;
+}
+.topSearchIco, .navIco{
+  display: none;
+}
+/*头部信息*/
+.headDiv{
+  width: 100%;
+  height: 130px;
+  background: #fff;
+}
+.headDiv .wal{
+  height: 130px;
+  position: relative;
+}
+.wal {
+  width: 1320px;
+  margin: 0 auto;
+}
+.headDiv .wal .topRight{
+  position: absolute;
+  top: 13px;
+  right: 90px;
+}
+.topRight li{
+  float: right;
+  width: 29px;
+  position: relative;
+  margin-left: 20px;
+}
+.headDiv .wal .links{
+  position: absolute;
+  font-size: 14px;
+  right: 0;
+  top: 13px;
+  line-height: 31px;
+}
+.topRight .search{
+  width: 31px;
+  height: 31px;
+}
+.topRight .search input{
+  position: absolute;
+  right: 0;
+  top: -1px;
+  width: 180px;
+  height: 29px;
+  line-height: 29px;
+  font-size: 13px;
+  border-radius: 20px;
+  border: 1px solid #ababab;
+  outline: 0;
+  padding: 0 40px 0 15px;
+  color: #888;
+  visibility: hidden;
+  opacity: 0;
+  transition: all .8s;
+}
+.topRight .search img{
+  position: absolute;
+  z-index: 2;
+  cursor: pointer;
+}
+.topRight .search:hover input{
+  opacity: 1;
+  visibility: initial;
+}
+.topRight .ewm{
+  width: 90px;
+  height: 84px;
+  position: absolute;
+  left: -25px;
+  top: 5px;
+  z-index: 20;
+  visibility: hidden;
+  opacity: 0;
+  padding-top: 8px;
+  transition: all .8s;
+}
+.topRight .ewm img{
+  width: 85%;
+}
+.topRight .weixin:hover .ewm{
+  visibility: initial;
+  top: 25px;
+  opacity: 1;
+}
+.wal .logo{
+  position: absolute;
+  left: 50%;
+  margin-left: -106px;
+  top: 30px;
+}
+.wal .nav1, .wal .nav2{
+  height: 80px;
+  position: absolute;
+  bottom: 0;
+}
+.wal .nav1{
+  left: 0;
+}
+.wal .nav2{
+  right: 0;
+}
+.wal .nav1 > ul > li, .wal .nav2 > ul >li{
+  float: left;
+  font-size: 16px;
+  font-weight: bold;
+  height: 80px;
+  line-height: 80px;
+  padding: 0 55px;
+}
+.wal .nav1 > ul > li:first-child{
+  padding-left: 0;
+}
+.wal .nav2 > ul > li:last-child{
+  padding-right: 0;
+}
+.wal .nav1 > ul > li + li, .wal .nav2 > ul > li + li{
+  background: url(../img/ico1.png) no-repeat center left;
+}
+.wal .nav1 > ul > li > a, .wal .nav2 > ul > li > a{
+  display: block;
+  height: 77px;
+  line-height: 77px;
+  color: #434343;
+}
+.wal .nav1 > ul > li:hover>a, .wal .nav2 > ul > li:hover>a{
+  color: #759250;
+  border-bottom: 3px solid #759250;
+}
+.wal .nav1 > ul > li:hover .sNav, .wal .nav2 > ul > li:hover .sNav{
+  display: block;
+}
+.sNav{
+  position: absolute;
+  top: 80px;
+  z-index: 100;
+  width: 120px;
+  background: url(../img/bg3.png);
+  padding: 15px 0 5px;
+  display: none;
+}
+.sNav li{
+  font-size: 14px;
+  line-height: 20px;
+  height: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-weight: initial;
+}
+.sNav li a{
+  color: #333;
+}
+.sNav li a:hover{
+  color: #759250;
+}
+.navLayer{
+  width: 100%;
+  height: 100%;
+  background: #759250;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  right: -100%;
+  display: none;
+  transition: all .8s;
+}
+.navLayer .closeBtn{
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  top: 13px;
+  right: 16px;
+}
+.navLayer .closeBtn img{
+  width: 100%;
+}
+.navLayer .sideNav{
+  padding: 40px 10px;
+}
+.navLayer .sideNav li a{
+  color: #fff;
+}
+.navLayer .sideNav > ul > li{
+  line-height: 42px;
+  font-size: 14px;
+  color: #fff;
+  cursor: pointer;
+}
+.navLayer .sideNav > ul > li + li{
+  background: url(../img/nimg52_1.png) no-repeat right 10px;
+  background-size: 32px;
+}
+.navLayer .sideNav .active{
+  background: url(../img/nimg52_1on.png) no-repeat right 10px;
+  background-size: 32px;
+}
+.sideNav li hr{
+  border: 0;
+  border-bottom: 1px solid #fff;
+}
+.navContent a{
+  padding-left: 12px;
+}
+.navContent{
+  overflow: hidden;
+  height: 0px;
+  transition: height .5s;
+}
+.sideNav li:nth-child(2).active .navContent{
+  height: 126px;
+} 
+.sideNav li:nth-child(3).active .navContent{
+  height: 210px;
+} 
+.sideNav li:nth-child(4).active .navContent{
+  height: 42px;
+} 
+.sideNav li:nth-child(5).active .navContent{
+  height: 210px;
+} 
+.sideNav li:nth-child(6).active .navContent{
+  height: 42px;
+} 
+.sideNav li:nth-child(7).active .navContent{
+  height: 84px;
+} 
+#pageBg{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 70px;
+  left: 0;
+  display: none;
+  background: rgba(0,0,0,.4);
+  z-index: 500;
+}
+.searchLayer{
+  width: 100%;
+  position: fixed;
+  top: 70px;
+  left: 0;
+  display: none;
+  opacity: 0;
+  transition:all 1s;
+  z-index: 9999;
+}
+.searchLayer .box{
+  background: url(../img/bg2.png);
+  padding: 30px 10px;
+  position: relative;
+}
+.searchLayer .box input{
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  color: #999;
+  font-size: 14px;
+  box-sizing: border-box;
+  padding: 0 20px;
+  border-radius: 20px;
+}
+.searchLayer .box button{
+  position: absolute;
+  right: 9px;
+  top: 30px;
+  width: 60px;
+  height: 40px;
+  background: #759250 url(../img/nimg20_5.png) center no-repeat;
+  cursor: pointer;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.btnDiv a{
+  display: block;
+  width: 158px;
+  height: 46px;
+  line-height: 50px;
+  text-align: center;
+  color: #333;
+  border: 1px solid #333;
+  font-size: 14px;
+  margin-top: 70px;
+}
+.btnDiv a:hover{
+  border:#75924f solid 1px; 
+  background:#75924f;
+}
+.indexTitle{
+  text-align: center;
+  color: #333;
+}
+.indexTitle .txt1{
+  font-size: 42px;
+  font-weight: bold;
+}
+.indexTitle .txt2{
+  font-size: 18px;
+  padding-bottom: 20px;
+  position: relative;
+}
+.indexTitle .txt2 em{
+  position: absolute;
+  height: 1px;
+  width: 30px;
+  background: #333;
+  bottom: 0;
+  left: 50%;
+  margin-left: -15px;
+}
+/* 底部联系我们 */
+.footDiv{
+  padding-top: 85px;
+  color: #fff;
+  height: 732px;
+  background: #333;
+  overflow: hidden;
+}
+.indexTitle2{
+  color: #fff;
+}
+.indexTitle2 .txt2 em{
+  background: #fff;
+}
+.footDiv .leftDiv{
+  width: 540px;
+  padding-top: 70px;
+}
+.footDiv .ewmDiv p{
+  font-size: 14px;
+  padding-top: 12px;
+}
+.footDiv .msgList{
+  padding-top: 35px;
+}
+.footDiv .msgList li{
+  font-size: 14px;
+  color: #999;
+  line-height: 30px;
+}
+.footDiv .rightDiv{
+  width: 780px;
+  padding-top: 70px;
+}
+.footDiv .rightDiv > p{
+  font-size: 16px;
+  padding-bottom: 35px;
+}
+.footDiv .form{
+  overflow: hidden;
+}
+.footDiv .form li{
+  width: 310px;
+  float: left;
+  margin:0 60px 20px 0;
+  height: 42px;
+  line-height: 42px;
+  border-bottom: 1px solid #707070;
+  font-size: 14px;
+  color: #999;
+}
+.footDiv .form li:nth-child(even){
+  margin-right: 0;
+  width: 410px;
+}
+.footDiv .form li input{
+  width: 80%;
+  height: 42px;
+  line-height: 42px;
+  font-size: 12px;
+  color: #888;
+  background: transparent;
+}
+.footDiv .form li:last-child{
+  width: 780px;
+  height: 85px;
+  position: relative;
+}
+.footDiv .form li:last-child span{
+  position: absolute;
+  left: 0;
+  top: -7px;
+}
+.footDiv .form li textarea{
+  line-height: 24px;
+  width: 615px;
+  height: 85px;
+  color: #888;
+  resize: none;
+  background: transparent;
+  border: 0;
+  outline: 0;
+  float: right;
+}
+.footDiv .btnDiv{
+  padding-top: 10px;
+}
+.footDiv .btnDiv a{
+  width: 100%;
+  height: 50px;
+  background: #759250;
+  color: #fff;
+  line-height: 50px;
+  margin-top: 0;
+  border: 0;
+}
+.footDiv .btnDiv a:hover{
+  border: 0;
+}
+.footDiv .botDiv{
+  padding-top: 100px;
+}
+.footDiv .links{
+  font-size: 14px;
+  color: #999;
+}
+.footDiv .links a{
+  padding: 0 15px;
+  color: #999;
+}
+.footDiv .links a:hover{
+  color: #759250;
+}
+.footDiv .wenzi{
+  font-size: 14px;
+  color: #999;
+}

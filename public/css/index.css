@@ -1,0 +1,454 @@
+/*轮播图*/
+.banner{
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.banner .ul1{
+  display: flex;
+  width: 400%;
+}
+.banner .ul2{
+  position: absolute;
+  right: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.banner .ul2 li{
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  margin-top: 15px;
+  cursor: pointer;
+  border: 1px solid #fff;
+}
+.banner .ul2 li.active{
+  background: #fff;
+}
+.banner .ul1 li{
+  opacity: 0.5;
+  transition: all 5s;
+  /* visibility: hidden; */
+}
+.banner .ul1 li.active{
+  opacity: 1;
+  /* visibility: visible; */
+}
+.banner .ul1 li.active img{
+  width: 100%;
+}
+.banner .ul1 li img{
+  width: 0;
+  height: 100%;
+  transition: all .5s;
+}
+.indexFlash{
+  width: 100%;
+  display: none;
+}
+.indexFlash ul li img{
+  width: 100%;
+}
+/*产品中心*/
+.indexPart1{
+  background: url(../img/indexPart1.jpg) center no-repeat;
+  background-size: cover;
+  padding: 100px 0;
+  height: 624px;
+}
+.indexPart1 .specs{
+  font-size: 18px;
+  color: #75924f;
+  font-weight: bold;
+  padding-bottom: 25px;
+  text-transform: uppercase;
+}
+.bigBox .leftDiv{
+  width: 205px;
+}
+.leftDiv ul{
+  transition: all .5s;
+}
+.bigBox .leftDiv li{
+  width: 186px;
+  height: 65px;
+  line-height: 65px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+  border-bottom: 1px solid #dbdbdb;
+}
+.bigBox .leftDiv li img{
+  padding:0 10px;
+}
+.bigBox .leftDiv li .img1 + img, 
+.bigBox .leftDiv li:hover .img1, 
+.bigBox .leftDiv li.liNow .img1{
+  display: none;
+}
+.bigBox .leftDiv li:hover, .bigBox .leftDiv li.liNow{
+  color: #759250;
+}
+.bigBox .leftDiv li:hover .img1 + img, 
+.bigBox .leftDiv li.liNow .img1 + img{
+  display: inline-block;
+}
+.indexProduct{
+  width: 1100px;
+}
+.indexProduct .box{
+  width: 100%;
+  position: relative;
+  display: none;
+}
+.indexProduct .active{
+  display: block;
+}
+.icon-prev, .icon-next{
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 50%;
+  margin-top: -20px;
+  z-index: 100;
+  background-size: 100%;
+}
+.icon-prev{
+  left: 0;
+  background: url(../img/nimg40_left.png) no-repeat;
+}
+.icon-next{
+  right: 0;
+  background: url(../img/nimg40_right.png) no-repeat;
+}
+.icon-prev:hover{
+  background: url(../img/nimg40_lefton3.png) no-repeat;
+  background-size: 100%;
+}
+.icon-next:hover{
+  background: url(../img/nimg40_righton3.png) no-repeat;
+  background-size: 100%;
+}
+.leftDiv .icon-prev, .leftDiv .icon-next{
+  display: none;
+}
+.listBox{
+  width: 972px;
+  height: 425px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.listBox ul{
+  width: 3410px;
+  height: 425px;
+  position: relative;
+}
+.listBox .transition{
+  transition: all .5s;
+}
+.listBox li{
+  width: 310px;
+  height: 425px;
+  float: left;
+  background: #fefefe;
+  margin: 0 8px;
+}
+.listBox li .imgDiv{
+  overflow: hidden;
+}
+.listBox li .imgDiv img{
+  width: 100%;
+  transition: all 1s;
+}
+.listBox li .proTitle{
+  font-size: 18px;
+  padding: 10px 28px;
+  position: relative;
+}
+.listBox li .proTitle a{
+  color: #333;
+  overflow: hidden;
+  display: block;
+  height: 21px;
+}
+.listBox li .proTitle em{
+  position: absolute;
+  left: 28px;
+  bottom: 0px;
+  display: block;
+  width: 34px;
+  height: 1px;
+  background: #dbdbdb;
+}
+.listBox li .txt{
+  color: #a4a4a4;
+  font-size: 14px;
+  padding: 10px 28px 0;
+  height: 22px;
+  overflow: hidden;
+  line-height: 22px;
+}
+.listBox li:hover .imgDiv img{
+  transform: scale(1.1);
+}
+.listBox li:hover .proTitle a{
+  color: #75924f;
+}
+/* 公司简介 */
+.indexPart2{
+  padding-top: 80px;
+}
+.indexPart2 .box1{
+  padding-bottom: 48px;
+}
+.indexPart2 .box{
+  padding: 50px 0 70px;
+  background: #f5f4f0;
+}
+.indexPart2 .content{
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  padding: 30px 20px 48px;
+}
+.indexPart2 .btnDiv a{
+  margin: 0 auto;
+}
+.indexPart2 .box2{
+  background: #f5f4f0;
+  padding: 50px 0 70px;
+}
+.indexPart2 .videoTitle{
+  text-align: center;
+  font-size: 24px;
+  color: #333;
+  padding-bottom: 45px;
+}
+.indexPart2 .videoImg{
+  margin-top: 15px;
+}
+.indexPart2 .videoImg a{
+  display: block;
+  float: left;
+  margin-right: 10px;
+  width: 22%;
+}
+.indexPart2 .videoImg .active{
+  border: 2px solid #759250;
+}
+/* 产品展示 */
+.indexPart3{
+  padding: 70px 0 50px;
+}
+.indexPart3 .btnDiv a{
+  margin: 0 auto;
+}
+.indexPart3 .indexStore{
+  padding: 42px 0;
+  position: relative;
+}
+.indexStore > a{
+  display: block;
+  width: 70px;
+  height: 80px;
+  position: absolute;
+  top: 50%;
+  margin-top: -40px;
+  z-index: 100;
+}
+.indexStore .slick-prev{
+  left: 0;
+  background: url(../img/nimg70_left.png) no-repeat;
+}
+.indexStore .slick-next{
+  right: 0;
+  background: url(../img/nimg70_right.png) no-repeat;
+}
+.indexStore .slick-prev:hover{
+  background: url(../img/nimg70_lefton.png) no-repeat;
+}
+.indexStore .slick-next:hover{
+  background: url(../img/nimg70_righton.png) no-repeat;
+}
+.indexStore .slick-list{
+  overflow: hidden;
+  display: block;
+  width: 100%;
+  min-height: 300px;
+}
+.indexStore .slick-list ul{
+  width: 200%;
+}
+.indexStore .slick-list li{
+  height: 100%;
+  width: 17%;
+  float: left;
+  position: relative;
+}
+.indexStore .slick-list .imgDiv img{
+  width: 100%;
+  vertical-align: middle;
+}
+.indexStore .slick-list li:hover .hideBox{
+  opacity: 1;
+}
+.indexStore .slick-list .hideBox{
+  background: rgba(0, 0, 0, .6);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 55;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: all .3s;
+}
+.indexStore .slick-list .hideBox .name{
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  height: 26px;
+  line-height: 26px;
+  overflow: hidden;
+  margin-top: 120px;
+}
+.indexStore .slick-list .hideBox .ico{
+  width: 66px;
+  height: 66px;
+  margin: 30px auto 0;
+}
+/* 最新活动 */
+.indexPart4{
+  padding-top: 70px;
+  background: url(../img/indexPart4.jpg) center no-repeat;
+  background-size: cover;
+  height: 754px;
+}
+.indexPart4 .btnDiv a{
+  margin: 0 auto;
+}
+.indexPart4 .list{
+  padding: 52px 0 32px;
+}
+.indexPart4 .list li{
+  float: left;
+  width: 33.3%;
+}
+.indexPart4 .list li .box{
+  margin-right: 28px;
+}
+.indexPart4 .list li .imgDiv{
+  overflow: hidden;
+}
+.indexPart4 .list li .imgDiv img{
+  width: 100%;
+  transition: all 1s;
+}
+.indexPart4 .list li:hover img{
+  transform: scale(1.1);
+}
+.indexPart4 .list li .botDiv{
+  background: #fff;
+  position: relative;
+  margin: -37px 18px 0;
+  height: 200px;
+  padding: 0 18px;
+}
+.indexPart4 .list li .time{
+  padding: 13px 0;
+  font-size: 14px;
+  color: #999;
+}
+.indexPart4 .list li .name{
+  font-size: 22px;
+  position: relative;
+  padding-bottom: 15px;
+}
+.indexPart4 .list li .name a{
+  color: #333;
+  display: block;
+  height: 26px;
+  line-height: 26px;
+  overflow: hidden;
+}
+.indexPart4 .list li:hover .name a{
+  color: #759250;
+}
+.indexPart4 .list li .name em{
+  width: 28px;
+  height: 1px;
+  display: block;
+  background: #333;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.indexpart4 .list li .content{
+  padding-top: 15px;
+  font-size: 14px;
+  line-height: 22px;
+  overflow: hidden;
+  height: 50px;
+  color: #999;
+}
+.indexPart4 .list li .more{
+  padding-top: 15px;
+}
+.indexPart4 .list li .more a{
+  color: #333;
+  font-size: 14px;
+  display: block;
+  height: 24px;
+  line-height: 24px;
+  width: 113px;
+  background: url(../img/nimg26_1.png) right center no-repeat;
+}
+.indexPart4 .list li:hover .more a{
+  color: #759250;
+  background: url(../img/nimg26_1on.png) right center no-repeat;
+}
+/* 品牌优势 */
+.indexPart5{
+  padding: 90px 0 150px;
+}
+.indexPart5 .list{
+  padding-top: 85px;
+}
+.indexPart5 .list li{
+  width: 25%;
+  float: left;
+  text-align: center;
+}
+.indexPart5 .list li .ico{
+  width: 150px;
+  margin: 0 auto;
+  height: 150px;
+  position: relative;
+}
+.indexPart5 .list li .ico img{
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all .5s;
+}
+.indexPart5 .list li .ico .img1{
+  opacity: 0;
+}
+.indexPart5 .list li:hover .ico .img1{
+  opacity: 1;
+}
+.indexPart5 .list li .name{
+  font-size: 22px;
+  padding-top: 35px;
+  color: #333;
+}
+.indexPart5 .list li .msg{
+  padding: 10px 0 20px;
+  font-size: 15px;
+  color: #a4a4a4;
+  overflow: hidden;
+}
+.indexPart5 .list li:hover .name,.indexPart5 .list li:hover .msg{
+  color: #759250;
+}

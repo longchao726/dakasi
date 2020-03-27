@@ -1,0 +1,641 @@
+/* 联系我们页面 */
+.pageBanner img, .pageBannerTel img{
+  width: 100%;
+}
+.pageBannerTel{
+  display: none;
+}
+.pageNav{
+  overflow: hidden;
+  padding: 40px 0 80px;
+}
+.pageNav .list{
+  text-align: center;
+}
+.pageNav li{
+  display: inline-block;
+  font-size: 16px;
+  width: 130px;
+  height: 48px;
+}
+.pageNav li a{
+  display: block;
+  width: 130px;
+  height: 48px;
+  line-height: 48px;
+  color: #666;
+}
+.pageNav li a.aNow{
+  border: 1px solid #333;
+}
+/* 主体开始 */
+.contact{
+  padding-bottom: 160px;
+}
+.contact .txt, .consulting .txt{
+  font-size: 30px;
+  text-align: center;
+  color: #333;
+  padding: 75px 0 50px;
+}
+.contact .list li{
+  float: left;
+  width: 25%;
+  font-size: 16px;
+  line-height: 30px;
+}
+.contact .list li .box{
+  margin-right: 14px;
+  height: 254px;
+  background: #f5f4f0;
+}
+.contact .list li .ico{
+  padding: 40px 0 30px;
+  text-align: center;
+  position: relative;
+  height: 100px;
+}
+.contact .list li .ico img{
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  margin-left: -46px;
+}
+.contact .list li .ico .img1{
+  opacity: 0;
+  transition: all .5s;
+}
+.contact .list li .msg{
+  padding: 0 30px 0 115px;
+  position: relative;
+}
+.contact .list li .msg span{
+  position: absolute;
+  left: 30px;
+  top: 0;
+}
+.contact .list li:nth-child(2) .msg{
+  padding-left: 142px;
+}
+.contact .list li:nth-child(2) .msg span{
+  left: 65px;
+}
+.contact .list li:nth-child(3) .msg, .contact .list li:nth-child(4) .msg{
+  padding: 0;
+  text-align: center;
+}
+.contact .list li:hover{
+  color: #759250
+}
+.contact .list li:hover .img1{
+  opacity: 1;
+}
+.consulting{
+  height: 1184px;
+  background: url(../img/nimg1920Bg2.jpg) center no-repeat;
+}
+.consulting .form{
+  width: 710px;
+  margin: 0 auto;
+  font-size: 14px;
+}
+.consulting .form li{
+  text-align: center;
+}
+.consulting .form li + li{
+  margin-top: 15px;
+}
+.consulting .form li span:first-child{
+  display: inline-block;
+  width: 70px;
+  line-height: 52px;
+  text-align: right;
+}
+.consulting .form li input{
+  background: #eee;
+  height: 50px;
+  line-height: 50px;
+  text-indent: 10px;
+  width: 598px;
+}
+.consulting .form li .tips{
+  color: red;
+  padding-left: 10px;
+}
+.consulting .form li textarea{
+  line-height: 24px;
+  width: 598px;
+  height: 185px;
+  resize: none;
+  background: #eee;
+  border: 0;
+  outline: 0;
+  padding: 10px;
+  box-sizing: border-box;
+  vertical-align: top;
+}
+.consulting .form li a{
+  margin: 30px auto;
+  background: #759250;
+  color: #fff;
+  width: 159px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  display: block;
+  font-size: 14px;
+}
+/* 营业据点 */
+.stronghold{
+  padding: 30px 0 270px;
+}
+.stronghold .bigImg{
+  padding: 42px 0 25px;
+}
+.stronghold .bigImg img{
+  width: 100%;
+}
+.stronghold .contentBox .imgDiv{
+  float: left;
+  width: 55%;
+}
+.stronghold .contentBox .imgDiv img{
+  width: 100%;
+}
+.stronghold .contentBox .msg{
+  float: right;
+  font-size: 14px;
+  line-height: 30px;
+  padding-top: 120px;
+  width: 40%;
+}
+/* 精彩活动 */
+.activity{
+  padding-bottom: 100px;
+}
+.activity .list{
+  padding: 75px 0 60px;
+}
+.activity .list li::after{
+  content: '';
+  display: block;
+  clear: both;
+}
+.activity .list li{
+  margin-bottom: 65px;
+}
+.activity .list li .imgDiv{
+  width: 600px;
+  height: 397px;
+}
+.activity .list li .imgDiv img{
+  width: 100%;
+}
+.activity .list li .imgDiv{
+  float: right;
+  padding-right: 50px;
+}
+.activity .list li .box{
+  float: left;
+  padding-left: 50px;
+  width: 365px;
+}
+.activity .list li .name{
+  font-size: 22px;
+  height: 30px;
+  margin-top: 57px;
+  overflow: hidden;
+}
+.activity .list li .time{
+  font-size: 14px;
+  color: #3a3a3a;
+  margin-top: 20px;
+}
+.activity .list li .content{
+  height: 72px;
+  font-size: 14px;
+  color: #999;
+  line-height: 24px;
+  margin-top: 20px;
+}
+.activity .list li:nth-child(2n + 1) .imgDiv{
+  float: left;
+  padding: 0 0 0 50px;
+}
+.activity .list li:nth-child(2n + 1) .box{
+  float: right;
+  padding: 0 50px 0 0;
+}
+.pageNum{
+  color: #5a5a5a;
+  text-align: center;
+  height: 50px;
+  margin-bottom: 50px;
+}
+.pageNum a{
+  display: inline-block;
+  padding: 0 12px;
+  height: 30px;
+  line-height: 32px;
+  border: 1px solid #bbb;
+  margin-right: 5px;
+  background-color: #fff;
+  font-size: 14px;
+}
+.pageNum a:hover, .pageNum .aNow{
+  color: #fff;
+  background: #333;
+  border: 1px solid #333;
+}
+.pageNum .prev span{
+  padding-left: 12px;
+  background: url(../img/prev.png) no-repeat left center;
+}
+.pageNum .next span{
+  padding-right: 12px;
+  background: url(../img/next.png) no-repeat right center;
+}
+.pageNum .prev:hover span{
+  background: url(../img/prev_on.png) no-repeat left center;
+}
+.pageNum .next:hover span{
+  background: url(../img/next_on.png) no-repeat right center;
+}
+.pageMore{
+  padding: 20px 0;
+  width: 152px;
+  margin: 0 auto;
+  display: none;
+}
+.pageMore span{
+  display: block;
+  width: 150px;
+  height: 45px;
+  line-height: 45px;
+  background: #fff;
+  border: 1px solid #5a5a5a;
+  text-align: center;
+  font-size: 16px;
+}
+/* 产品中心 */
+.product{
+  padding-top: 75px;
+  background: url(../img/productBg.jpg) no-repeat center;
+}
+.product .leftDiv{
+  width: 284px;
+}
+.product .leftDiv .txt{
+  font-size: 18px;
+  color: #333;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.productNav{
+  padding-top: 30px;
+}
+.productNav li{
+  width: 160px;
+  height: 65px;
+  border-bottom: 1px solid #dbdbdb;
+  line-height: 65px;
+  font-size: 16px;
+}
+.productNav li a{
+  color: #333;
+}
+.productNav li img{
+  padding: 0 10px 0 4px;
+  position: relative;
+  top: -4px;
+}
+.productNav li .img1{
+  display: none;
+}
+.productNav li a:hover, .product li a.aNow{
+  color: #759250;
+}
+.productNav li a:hover img, .productNav li a.aNow img{
+  display: none;
+}
+.productNav li a:hover .img1, .productNav li a.aNow .img1{
+  display: inline-block;
+}
+.product .rightDiv{
+  width: 1036px;
+}
+.product .list{
+  padding-bottom: 55px;
+}
+.product .list ul{
+  margin-right: -29px;
+}
+.product .list li{
+  width: 33.3%;
+  float: left;
+  margin-bottom: 30px;
+}
+.product .list li .box{
+  margin-right: 29px;
+  background: #fefefe;
+  height: 425px;
+}
+.product .list li .imgDiv{
+  overflow: hidden;
+}
+.product .list li .imgDiv img{
+  width: 100%;
+  transition: 1s;
+}
+.product .list li:hover .imgDiv img{
+  transform: scale(1.1);
+}
+.product .list li .name{
+  font-size: 18px;
+  position: relative;
+  padding: 10px 28px;
+}
+.product .list li .name a{
+  display: block;
+  height: 22px;
+  overflow: hidden;
+  color: #333;
+}
+.product .list li:hover .name a{
+  color: #759250;
+}
+.product .list li .name em{
+  position: absolute;
+  left: 28px;
+  bottom: 0px;
+  display: block;
+  width: 34px;
+  height: 1px;
+  background: #dbdbdb;
+}
+.product .list li .txt{
+  color: #4a4a4a;
+  font-size: 14px;
+  padding: 10px 28px 0;
+  height: 22px;
+  overflow: hidden;
+  line-height: 22px;
+}
+/* 公司简介 */
+.aboutPart1{
+  padding-bottom: 110px;
+}
+.aboutPart1 .contentBox{
+  margin-top: 85px;
+  padding-left: 333px;
+  position: relative;
+  min-height: 340px;
+}
+.aboutPart1 .contentBox .imgDiv{
+  position: absolute;
+  top: 0;
+  left: 80px;
+}
+.aboutPart1 .contentBox .year{
+  padding-top: 42px;
+  font-size: 48px;
+  color: #759250;
+}
+.aboutPart1 .contentBox .txt{
+  color: #333;
+  font-size: 30px;
+  padding: 25px 0 40px;
+}
+.aboutPart1 .contentBox .content{
+  font-size: 14px;
+  line-height: 34px;
+}
+.aboutPart2{
+  background: #f5f4f0;
+  padding: 132px 0;
+  overflow: hidden;
+}
+.aboutPart2>div{
+  width: 50%;
+}
+.aboutPart2 .bigImg{
+  background: url(../img/nimg710_1.jpg) no-repeat right center;
+  background-size: cover;
+  height: 512px;
+}
+.aboutPart2 .bigImg img{
+  display: none;
+}
+.aboutPart2 .rightDiv{
+  position: relative;
+}
+.aboutPart2 .rightDiv .we{
+  padding: 45px 0 0 35px;
+  height: 22px;
+  line-height: 22px;
+  color: #333;
+}
+.aboutPart2 .rightDiv .txt{
+  color: #333;
+  font-size: 30px;
+  padding: 30px 0 0 35px;
+}
+.aboutPart2 .rightDiv .content{
+  font-size: 14px;
+  line-height: 32px;
+  padding: 30px 136px 0 35px;
+}
+.aboutPart2 .rightDiv .imgList{
+  margin-top: 35px;
+}
+.aboutPart2 .rightDiv .imgList li{
+  float: left;
+}
+.aboutPart3{
+  padding: 85px 0 90px;
+  text-align: center;
+}
+.aboutPart3 .txt, .aboutPart5 .txt{
+  color: #333;
+  font-size: 30px;
+  padding-bottom: 30px;
+}
+.aboutPart3 .content, .aboutPart5 .content{
+  font-size: 14px;
+  line-height: 32px;
+}
+.aboutPart3 .bigImg{
+  padding: 55px 0 70px;
+}
+.aboutPart3 .bigImg img, .aboutPart5 .bigImg img{
+  width: 100%;
+}
+.aboutPart5{
+  text-align: center;
+}
+/* 品牌文化 */
+.culturePart1{
+  padding-bottom: 65px;
+  text-align: center;
+}
+.culturePart1 .txt{
+  padding: 75px 0 25px;
+  font-size: 30px;
+  color: #333;
+}
+.culturePart1 .content{
+  font-size: 14px;
+  padding-bottom: 60px;
+  line-height: 30px;
+}
+.culturePart1 .wenzi{
+  font-size: 18px;
+  color: #333;
+  padding-bottom: 35px;
+}
+.culturePart1 .list{
+  padding: 0 250px;
+  overflow: hidden;
+}
+.culturePart1 .list li{
+  float: left;
+  width: 25%;
+  font-size: 14px;
+  line-height: 24px;
+}
+.culturePart2{
+  background: url(../img/culturePart2.jpg) center no-repeat;
+  background-size: cover;
+  height: 383px;
+}
+.culturePart2 .content{
+  padding-top: 70px;
+  font-size: 14px;
+  line-height: 32px;
+  color: #fff;
+  width: 890px;
+  margin: 0 auto;
+  text-align: center;
+}
+.culturePart2 .content span{
+  font-size: 18px;
+}
+.culturePart3{
+  background: url(../img/culturePart3.jpg) center no-repeat;
+  background-size: cover;
+  height: 596px;
+  text-align: center;
+}
+.culturePart3 .txt{
+  padding: 80px 0 25px;
+  color: #333;
+  font-size: 30px;
+}
+.culturePart3 .msg{
+  font-size: 14px;
+  line-height: 36px;
+}
+.culturePart3 .msg span{
+  font-size: 18px;
+  color: #333;
+}
+.store{
+  padding-bottom: 100px;
+}
+.store .form{
+  padding-top: 80px;
+}
+.store .form p{
+  font-size: 16px;
+  height: 32px;
+}
+.store .form .box{
+  float: left;
+  margin-right: 55px;
+}
+.store .form select{
+  width: 274px;
+  height: 44px;
+  line-height: 44px;
+  border: 1px solid #aaa;
+  cursor: pointer;
+  background: url("../img/selectIco.png") no-repeat scroll right center transparent;
+  font-size: 16px;
+  padding-right: 20px;
+  text-indent: 15px;
+  color: #666;
+  outline: 0;
+  appearance:none;
+  -moz-appearance:none;
+  -webkit-appearance:none;
+}
+.store .box1{
+  position: relative;
+  float: left;
+}
+.store .box1 span{
+  font-size: 14px;
+  line-height: 46px;
+}
+.store .box1 input{
+  width: 272px;
+  height: 44px;
+  border: 1px solid #aaa;
+  margin-left: 10px;
+  color: #bbb;
+  text-indent: 16px;
+  font-size: 14px;
+}
+.store .box1 button{
+  width: 38px;
+  height: 44px;
+  background: url(../img/search.jpg) no-repeat center;
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+}
+.store .list{
+  padding-top: 56px;
+}
+.store .list ul{
+  margin-right: -14px;
+}
+.store .list li{
+  float: left;
+  width: 33.33%;
+  margin-bottom: 65px;
+}
+.store .list li .box{
+  margin-right: 14px;
+  box-shadow: 0 1px 5px rgba(35,25,25,0.2);
+  overflow: hidden;
+}
+.store .list li .imgDiv{
+  overflow: hidden;
+}
+.store .list li .imgDiv img{
+  width: 100%;
+  transition: 1s;
+}
+.store .list li .botDiv{
+  padding: 25px 20px 0;
+}
+.store .list li .botDiv .name{
+  font-size: 18px;
+  color: #333;
+  height: 30px;
+  line-height: 30px;
+  overflow: hidden;
+}
+.store .list li .botDiv .msg{
+  color: #999;
+  line-height: 24px;
+  height: 48px;
+  overflow: hidden;
+  padding-top: 8px;
+}
+.store .list li:hover .imgDiv img{
+  transform: scale(1.1);
+}
+
+
