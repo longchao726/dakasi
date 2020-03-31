@@ -126,4 +126,9 @@ $(function () {
       data = location.search = 'q=' + $('.box1 input').val()
     }
   })
+  $(window).keyup(e => {
+    if (e.keyCode == 13 && $('.box1 input').val() != '') {
+      data = location.search = 'q=' + $('.box1 input').val()
+    }
+  })
 })

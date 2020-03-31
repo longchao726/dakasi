@@ -22,8 +22,12 @@ $(function () {
       })
 
       $('.search img').click(() => {
-        console.log(111)
         location.href = 'search.html?q=' + $('.search input').val();
+      })
+      $(window).keyup(e => {
+        if (e.keyCode == 13 && $('.search input').val() != '') {
+          location.href = 'search.html?q=' + $('.search input').val();
+        }
       })
     }
   })

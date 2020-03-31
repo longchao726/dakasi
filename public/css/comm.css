@@ -469,3 +469,34 @@ h1, h2, h3, h4, h5{
   font-size: 14px;
   color: #999;
 }
+/* QQ联系 */
+.sideBar{
+  position: fixed;
+  z-index: 999;
+  top: 100px;
+  right: 0px;
+  width: 75px;
+  cursor: pointer;
+}
+.sideBar li{
+  position: relative;
+  top: 76px;
+  height: 76px;
+  margin-bottom: 1px;
+}
+.sideBar .img{
+  background: #759250;
+  height: 76px;
+  text-align: center;
+  width: 75px;
+}
+.sideBar .img img{
+  position: relative;
+  top: 8px;
+}
+.sideBar .msg{
+  position: relative;
+  text-align: center; 
+  color: #fff;
+  bottom: 22px;
+}
