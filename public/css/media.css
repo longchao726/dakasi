@@ -30,6 +30,7 @@
   .indexStore .slick-list .hideBox .name{
     margin-top: 70px;
   }
+ 
   /* 底部联系我们 */
   .footDiv .leftDiv{
     width: 440px;
@@ -101,6 +102,13 @@
   /* 公司简介 */
   .indexPart2 .videoPic{
     padding: 0 34px;
+  }
+  /* 店铺展示 */
+  .indexStore .slick-list ul{
+    width: 300%;
+  }
+  .indexStore .slick-list ul li{
+    width: 11.1%;
   }
   /* 底部联系我们 */
   .footDiv .leftDiv{
@@ -333,12 +341,9 @@
   .indexPart3{
     padding: 35px 0 50px;
   }
-  .indexStore .slick-list li{
-    width: 25%;
-  }
-  .indexStore .slick-list{
-    max-height: 282px;
-  }
+   .indexStore .slick-list ul{
+    width: 900%;
+  } 
   .indexPart3 .btnDiv,.indexPart4 .btnDiv{
     display: block;
   }
@@ -769,11 +774,13 @@
     padding-bottom: 30px;
   }
   /* 店铺展示 */
-  .indexStore .slick-list li{
-    width: 50%;
-  }
   .indexStore .slick-list{
     height: auto;
+  }
+  .indexStore .slick-next, .indexStore .slick-prev{
+    width: 50px;
+    height: 60px;
+    background-size: 100%;
   }
   /* 联系我们页面 */
   .contact .txt, .consulting .txt{

@@ -20,6 +20,11 @@ $(function () {
       $('#sideNav').on('click', 'li:not(:first-child)', e => {
         $(e.target).toggleClass('active').siblings().removeClass('active')
       })
+
+      $('.search img').click(() => {
+        console.log(111)
+        location.href = 'search.html?q=' + $('.search input').val();
+      })
     }
   })
 })

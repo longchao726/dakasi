@@ -1,12 +1,14 @@
 /*轮播图*/
-.banner{
+.banner, .indexFlash{
   width: 100%;
+  height: 100%;
   overflow: hidden;
   position: relative;
+  background: rgba(200, 200, 200, .4);
 }
-.banner .ul1{
+.banner .ul1, .indexFlash .ul1{
   display: flex;
-  width: 400%;
+ /* width: 400%;*/
 }
 .banner .ul2{
   position: absolute;
@@ -14,40 +16,141 @@
   top: 50%;
   transform: translateY(-50%);
 }
+.wrap{
+  position: relative;
+  width: 10px;
+  height: 10px;
+  overflow: hidden;
+}
+.circle{
+height: 10px;
+width: 10px;
+/* background:red; */
+border-radius: 50%;
+position: absolute;
+}
+.left, .right{
+  position: absolute;
+  top: 0;
+  background: white;
+}
+.mask{
+  position: absolute;
+  width: 55%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: transparent;
+  overflow: hidden;
+  border-radius: 10px 0 0 10px;
+}
+.left{
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-origin: center right;
+  animation: 2.5s front-half linear 2.5s;
+  animation-fill-mode: forwards;
+  z-index: 1;
+}
+
+.right{
+  right: 0;
+  width: 50%;
+  height: 100%;
+  transform-origin: center left;
+  animation: 2.5s front-half linear;
+  animation-fill-mode: forwards;
+  z-index: 3;
+  /* transform: rotate(0deg); */
+}
+ /* .circle:before{
+  content: '';
+  position: absolute;
+  display: block;
+  width: 50%;
+  height: 100%;
+  box-sizing: border-box;
+  bottom: 0;
+  right: 0;
+  /* background: red; 
+  border-radius: 0 100px 100px 0;
+  z-index: 2;
+}  */
+@keyframes front-half{
+  0%{
+    transform: rotate( 0 );
+  }
+  99%{
+    transform: rotate( 180deg );
+    opacity: 1;
+  }
+  100%{
+    transform: rotate( 180deg );
+    opacity: 0;
+  }
+}
 .banner .ul2 li{
-  width: 13px;
-  height: 13px;
+  width: 12px;
+  height: 12px;
   border-radius: 50%;
   margin-top: 15px;
   cursor: pointer;
   border: 1px solid #fff;
+  overflow: hidden;
+  box-sizing: border-box;
 }
-.banner .ul2 li.active{
-  background: #fff;
+.banner .ul1 li, .indexFlash .ul1 li{
+  opacity: 0;
 }
-.banner .ul1 li{
-  opacity: 0.5;
-  transition: all 5s;
-  /* visibility: hidden; */
-}
-.banner .ul1 li.active{
+.banner .ul1 li.active, .indexFlash .ul1 li.active{
+  width: 100%;
   opacity: 1;
-  /* visibility: visible; */
 }
-.banner .ul1 li.active img{
+.banner .ul1 li.active img, .indexFlash .ul1 li.active img{
   width: 100%;
 }
-.banner .ul1 li img{
+.banner .ul1 li img, .indexFlash .ul1 li img{
   width: 0;
   height: 100%;
-  transition: all .5s;
 }
 .indexFlash{
-  width: 100%;
   display: none;
 }
-.indexFlash ul li img{
+.indexFlash .ul2{
+  position: absolute;
+  bottom: 20px;
+  width: 40%;
+  height: 1%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.indexFlash .ul2 li{
+  width: 20%;
+  height: 100%;
+  background: rgba(255,255,255,.4);
+  float: left;
+  margin-right: 6.6%;
+  overflow: hidden;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.indexFlash .ul2 li:last-child{
+  margin-right: 0;
+}
+@keyframes mask{
+  0%{
+    transform: translateX( 0 );
+  }
+  100%{
+    transform: translateX( 100% );
+  }
+}
+.ul2_nask{
   width: 100%;
+  height: 100%;
+  background: #fff;
+  animation: mask 5s linear;
 }
 /*产品中心*/
 .indexPart1{
@@ -266,22 +369,28 @@
 }
 .indexStore .slick-prev:hover{
   background: url(../img/nimg70_lefton.png) no-repeat;
+  background-size: 100%;
 }
 .indexStore .slick-next:hover{
   background: url(../img/nimg70_righton.png) no-repeat;
+  background-size: 100%;
 }
 .indexStore .slick-list{
   overflow: hidden;
   display: block;
   width: 100%;
-  min-height: 300px;
+  height: 100%;
 }
 .indexStore .slick-list ul{
-  width: 200%;
+  width:300%;
+  position: relative;
+}
+.transition{
+  transition: all .5s;
 }
 .indexStore .slick-list li{
   height: 100%;
-  width: 17%;
+  width: 11.1%;
   float: left;
   position: relative;
 }

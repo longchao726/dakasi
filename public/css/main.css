@@ -637,5 +637,29 @@
 .store .list li:hover .imgDiv img{
   transform: scale(1.1);
 }
-
-
+.support{
+  padding-bottom:200px;
+}
+.indexTitle{
+  font-size: 30px;
+  margin-bottom: 72px;
+  margin-top: 72px;
+}
+.tab2 li{
+  width: 50%;
+  float: left;
+  text-align: center;
+  font-size: 24px;
+  line-height: 130px;
+  cursor: pointer;
+}
+.tab2 li.liNow{
+  color: #f8c301;
+}
+.support .list li{
+  float: left;
+  width: 50%;
+  text-align: center;
+  font-size: 22px;
+  line-height: 84px;;
+}

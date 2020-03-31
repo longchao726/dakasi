@@ -1,5 +1,6 @@
 $(function () {
   //定义函数获取首页产品的数据
+  //获取每次需要移动的距离
   function send (data) {
     $.ajax({
       type: 'get',
@@ -62,11 +63,12 @@ $(function () {
         $('.box .icon-prev').unbind('click');
         //获取ul下li的数量，在这里减去3是因为上面复制了3个产品，所以真实的数量要比获取到的数量少3个
         var count = $('.indexProduct ul').children().length - 3;
-        //获取每次需要移动的距离
-        var width = $('.listBox ul li').outerWidth(true)
         //设置初始值
         var i = 0;
+        var timer;
+        var width = $('.listBox ul li').outerWidth(true)
         $('.box .icon-next').click(() => {
+          clearInterval(timer)
           //如果可以点击的话
           if (canClick) {
             //i自增
@@ -86,12 +88,17 @@ $(function () {
               }, 500)
             }
           }
+          timer = setInterval(() => {
+            $('.box .icon-next').click();
+          }, 6000)
         })
         $('.box .icon-prev').click(() => {
+          clearInterval(timer)
           if (canClick) {
             if (i == 0) {
+              console.log($('.indexProduct ul'))
               $('.indexProduct ul').removeClass('transition')
-              $('.indexProduct ul').css('left', -(width * count) + 'px')
+                .css('left', -(width * count) + 'px')
               i = count - 1;
               setTimeout(() => {
                 move(-width)
@@ -101,9 +108,12 @@ $(function () {
               move(-width)
             }
           }
+          timer = setInterval(() => {
+            $('.box .icon-next').click();
+          }, 6000)
         })
 
-        setInterval(() => {
+        timer = setInterval(() => {
           $('.box .icon-next').click();
         }, 6000)
       }
@@ -133,18 +143,16 @@ $(function () {
     data = $this.attr('data-target');
     send(data);
   });
-  //在中小屏时产品标签页功能的动画
+  //在中小屏时产品标签页功能的动画  //有bug快速点击数量增加，尺寸还没跟上就容易造成最终的结果不是走的想要的想过，需要加定时器，后续再加，先放着
   var liWidth = $('.tea li').outerWidth(true);
   var liCount = 1;
   $('.leftDiv .icon-next').click(() => {
-    console.log(liCount)
     if (liCount < 4) {
       liCount++;
       $('.tea').css('left', parseInt($('.tea').css('left')) - liWidth + 'px');
     }
   })
   $('.leftDiv .icon-prev').click(() => {
-    console.log(liCount)
     if (liCount > 1) {
       liCount--;
       $('.tea').css('left', parseInt($('.tea').css('left')) + liWidth + 'px');
@@ -152,17 +160,135 @@ $(function () {
   })
   //当窗口大小发生改变时，从新获取产品的宽度进行动画
   $(window).resize(function () {
-    send(data);
+    //width = $('.listBox ul li').outerWidth(true)
+    liWidth = $('.tea li').outerWidth(true);
   });
 
-  //首页banner轮播图动画切换效果
-  //先获取ul1下所有li，为ul2添加子元素，
-  $('.banner .ul1').children().each((i, elem) => {
-    $('.banner .ul2').append('<li></li>')
-  })
+  //首页大屏以上banner轮播图动画切换效果  //bug是当切换到小屏的时候，动画开始从新播放，而定时器没有重新开始计时，
+  var i = 0;
+  function toggle (index) {
+    if (index == undefined) {
+      i++;
+    } else {
+      i = index;
+    }
+    if (i == 4) {
+      i = 0;
+    }
+    //大屏切换
+    $('.banner .ul1 li').eq(i).fadeTo(500, 1).addClass('active').siblings().fadeTo(500, 0).removeClass('active');
+    //小屏切换
+    $('.indexFlash .ul1 li').eq(i).fadeTo(500, 1).addClass('active').siblings().fadeTo(500, 0).removeClass('active');
+    var html = `<div class="wrap">
+                  <div class="circle"></div>
+                  <div class="mask">
+                    <div class="left"></div>
+                  </div>
+                  <div class="right"></div>
+                </div>`
+    var content = `<div class="ul2_nask"></div>`
+    $('.banner .ul2 li').eq(i).html(html).siblings().html('')
+    $('.indexFlash .ul2 li').eq(i).html(content).siblings().html('')
+  }
+  var timer;
+  function animate (target) {
+    clearInterval(timer)
+    var index = $(target).index()
+    toggle(index)
+    timer = setInterval(() => {
+      toggle()
+    }, 5000)
+  }
+  animate()
   $('.banner .ul2').on('click', 'li', e => {
-    $(e.target).addClass('active').siblings().removeClass('active')
-    var index = $(e.target).index()
-    $('.banner .ul1 li').eq(index).addClass('active').siblings().removeClass('active')
+    animate(e.target)
+  })
+  $('.indexFlash .ul2').on('click', 'li', e => {
+    animate(e.target)
+  })
+
+
+  //店铺展示获取数据并设置动画效果
+  $.ajax({
+    type: 'get',
+    url: 'http://localhost:3000/stores?_page=1&_limit=6',
+    success (result) {
+      console.log(result);
+      var html = ''
+      for (list of result) {
+        html += `
+              <li>
+                <div class="imgDiv">
+                  <img src="${list.img}" alt="${list.name}">
+                </div>
+                <div class="hideBox">
+                  <div class="name">${list.name}</div>
+                  <div class="ico"><img src="img/nimg66_1.png"></div>
+                </div>
+              </li>
+            `
+      }
+      $('.slick-list ul').html(html)
+        //首先窗口显示三个，所以，要复制前三个产品到最后，
+        .children().slice(0, 3).each(function (i, elem) {
+          var html = $(elem).html()
+          $('.slick-list ul').append(`<li>${html}</li>`)
+        })
+
+      //设置动画
+      function moveTo (width) {
+        $('.slick-list ul').addClass('transition')
+        $('.slick-list ul').css('left', parseInt($('.slick-list ul').css('left')) - width + 'px')
+      }
+      var canClick = true;
+      function move (width) {
+        if (canClick) {
+          canClick = false;
+          moveTo(width)
+        }
+        setTimeout(() => {
+          canClick = true;
+        }, 800)
+      }
+      //点击按钮让ul动起来
+      //获取li的宽度
+      var liWidth = $('.slick-list ul li').outerWidth(true);
+      //获取要移动的li的数量
+      var count = $('.slick-list ul').children().length - 3;
+      //定义初始值
+      var i = 0;
+      $('.slick-next').click(() => {
+        //获取li的宽度
+        var liWidth = $('.slick-list ul li').outerWidth(true);
+        if (canClick) {
+          i++
+          move(liWidth)
+          if (i == count) {
+            i = 0;
+            setTimeout(() => {
+              $('.slick-list ul').removeClass('transition')
+              $('.slick-list ul').css('left', 0)
+            }, 500)
+          }
+        }
+      })
+      $('.slick-prev').click(() => {
+        //获取li的宽度
+        var liWidth = $('.slick-list ul li').outerWidth(true);
+        if (canClick) {
+          if (i == 0) {
+            $('.slick-list ul').removeClass('transition')
+            $('.slick-list ul').css('left', -(liWidth * count) + 'px')
+            i = count - 1;
+            setTimeout(() => {
+              move(-liWidth)
+            }, 0)
+          } else {
+            i--;
+            move(-liWidth)
+          }
+        }
+      })
+    }
   })
 })
