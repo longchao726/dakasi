@@ -29,6 +29,14 @@ $(function () {
           location.href = 'search.html?q=' + $('.search input').val();
         }
       })
+      $('.box button').click(() => {
+        location.href = 'search.html?q=' + $('.box input').val();
+      })
+      $(window).keyup(e => {
+        if (e.keyCode == 13 && $('.box input').val() != '') {
+          location.href = 'search.html?q=' + $('.box input').val();
+        }
+      })
     }
   })
 })

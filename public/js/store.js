@@ -53,6 +53,40 @@ $(function () {
             var el = $(this);
             el.attr('href').split('?')[1].split('&')[0].split('=')[1] == _page ? el.addClass('aNow') : el.removeClass('aNow')
           })
+          $('.pageMore span').html('加载更多')
+          $('.pageMore span').click(() => {
+            $('.pageMore span').html('加载中...')
+            _page = parseInt(_page) + 1
+            data = `_page=${_page}&_limit=9`
+            $.ajax({
+              type: 'get',
+              dataType: 'json',
+              url: 'http://localhost:3000/stores',
+              data: data,
+              success (result) {
+                if (result.length < 9) {
+                  $('.pageMore span').html('没有更多数据了')
+                }
+                for (var store of result) {
+                  html += `
+                    <li>
+                      <div class="box">
+                        <div class="imgDiv">
+                          <img src="${store.img}" alt="">
+                        </div>
+                        <div class="botDiv">
+                          <div class="name">${store.name}</div>
+                          <div class="msg"></div>
+                        </div>
+                      </div>
+                    </li>
+                `
+                }
+                $('.list ul.clearFix').html(html)
+              }
+            })
+          })
+
         }
       }
     })
